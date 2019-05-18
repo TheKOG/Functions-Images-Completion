@@ -177,10 +177,10 @@ void Paint(HWND hwnd){
 	}
 	if(tot){
 		if(!solution){
-			wsprintf(s,"æ— è§£");
+			wsprintf(s,"ÎŞ½â");
 			rct={0,0,strlen(s)*10,25};
 			DrawText(dWinMap,s,strlen(s),&rct,DT_SINGLELINE|DT_LEFT|DT_VCENTER);
-			wsprintf(s,"æŒ‰SPACEæ¸…é™¤");
+			wsprintf(s,"°´SPACEÇå³ı");
 			rct={0,25,strlen(s)*10,50};
 			DrawText(dWinMap,s,strlen(s),&rct,DT_SINGLELINE|DT_LEFT|DT_VCENTER);
 			goto Break;
@@ -197,7 +197,7 @@ void Paint(HWND hwnd){
 			Y=Height/2-(Y-viewy)*len;
 			LineTo(dWinMap,X,Y);
 		}
-		wsprintf(s,"å‡½æ•°è§£æå¼: ");
+		wsprintf(s,"º¯Êı½âÎöÊ½: ");
 		for(int i=0;i<tot;i++){
 			if(f[i]<0)wsprintf(s,"%s-",s);
 			else if(i)wsprintf(s,"%s+",s);
@@ -221,7 +221,7 @@ void Paint(HWND hwnd){
 		}
 		rct={0,0,strlen(s)*10,25};
 		DrawText(dWinMap,s,strlen(s),&rct,DT_SINGLELINE|DT_LEFT|DT_VCENTER);
-		wsprintf(s,"æŒ‰Cå¤åˆ¶, æŒ‰SPACEæ¸…é™¤, æŒ‰0~9é€‰æ‹©ä¿ç•™ä½æ•°");
+		wsprintf(s,"°´C¸´ÖÆ, °´SPACEÇå³ı, °´0~9Ñ¡Ôñ±£ÁôÎ»Êı");
 		rct={0,25,strlen(s)*10,50};
 		DrawText(dWinMap,s,strlen(s),&rct,DT_SINGLELINE|DT_LEFT|DT_VCENTER);
 	}
